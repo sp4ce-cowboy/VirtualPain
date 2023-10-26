@@ -1,6 +1,6 @@
 # I_Feel_Pain
 ### Overview
-My final work for UTC2113 Gaming Life. An interdisciplinary exploration. My proposal's here. A snippet of that is below.
+My final work for UTC2113 Gaming Life. An interdisciplinary exploration. My proposal's [here](/Proposal.pdf). A snippet of that is below.
 
 ### The Context
 
