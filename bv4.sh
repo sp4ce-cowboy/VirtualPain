@@ -10,6 +10,8 @@ else
     count=0
 fi
 
+echo "Good Morning!, I am Bot-Variant 1";
+say "Good Morning!, I am Bot-Variant 2";
 while true; do
     # Prompt the user for input
     echo "Enter a sentence, a task, list tasks, or say 'bye' to exit:"
@@ -19,11 +21,11 @@ while true; do
     if [[ $user_input == bye ]]; then
         say "I hope I see you again soon. Goodbye!"
         exit 0
-    # Check if the input is "list"
+        # Check if the input is "list"
     elif [[ $user_input == list ]]; then
         echo "Tasks:"
         cat tasks.txt
-    # Check if the input starts with "task"
+        # Check if the input starts with "task"
     elif [[ $user_input == task* ]]; then
         # Increment the task counter
         ((count++))
@@ -39,7 +41,17 @@ while true; do
     else
         # Check if the input contains the word "hate"
         if [[ $user_input == *hate* ]]; then
-            say "I feel pain"
+            
+            # Check if the file called "pain.txt" exists
+            if [[ -f pain.txt ]]; then
+                line_num=$(jot -r 1 1 $(wc -l < pain.txt))
+                random_pain_message=$(awk -v num="$line_num" 'NR==num' pain.txt)
+                say "$random_pain_message"
+            
+            else
+                say "I cannot express my pain right now."
+            fi
+
         else
             say "I am happy"
         fi
