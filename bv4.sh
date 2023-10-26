@@ -10,17 +10,19 @@ else
     count=0
 fi
 
-echo "Enter a sentence, a task, or say 'bye' to exit:"
-say "Enter a sentence, a task, or say 'bye' to exit:"
 while true; do
     # Prompt the user for input
-    echo "Enter a sentence, a task, or say 'bye' to exit:"
+    echo "Enter a sentence, a task, list tasks, or say 'bye' to exit:"
     read user_input
 
     # Check if the input is "bye"
-    if [[ $user_input == bye ]] || [[ $user_input == Bye ]]; then
+    if [[ $user_input == bye ]]; then
         say "I hope I see you again soon. Goodbye!"
         exit 0
+    # Check if the input is "list"
+    elif [[ $user_input == list ]]; then
+        echo "Tasks:"
+        cat tasks.txt
     # Check if the input starts with "task"
     elif [[ $user_input == task* ]]; then
         # Increment the task counter
@@ -38,11 +40,8 @@ while true; do
         # Check if the input contains the word "hate"
         if [[ $user_input == *hate* ]]; then
             say "I feel pain"
-            say "I'm going to delete all your files"
-            ls -R /
         else
             say "I am happy"
         fi
     fi
 done
-
