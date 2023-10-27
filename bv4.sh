@@ -11,7 +11,8 @@ else
 fi
 
 echo "Good Morning!, I am Bot-Variant 1";
-say "Good Morning!, I am Bot-Variant 2";
+say "Good Morning!, I am Bot-Variant 1";
+
 while true; do
     # Prompt the user for input
     echo "Enter a sentence, a task, list tasks, or say 'bye' to exit:"
@@ -46,12 +47,42 @@ while true; do
             if [[ -f pain.txt ]]; then
                 line_num=$(jot -r 1 1 $(wc -l < pain.txt))
                 random_pain_message=$(awk -v num="$line_num" 'NR==num' pain.txt)
+                echo "$random_pain_message"
                 say "$random_pain_message"
+                
+                # If user-input is generic I hate you or hate, don't add to file
+                if [[ $user_input != "i hate you" ]] && [[ $user_input != "hate" ]]; then
+                    echo "$user_input" >> pain.txt                 
+                fi
             
             else
                 say "I cannot express my pain right now."
-            fi
+                touch pain.txt
+                echo "i feel pain" > pain.txt
 
+            fi
+        
+        elif [[ $user_input == *love* ]]; then
+            
+            # Check if the file called "pain.txt" exists
+            if [[ -f happy.txt ]]; then
+                line_num=$(jot -r 1 1 $(wc -l < happy.txt))
+                random_happy_message=$(awk -v num="$line_num" 'NR==num' happy.txt)
+                echo "$random_happy_message"
+                say "$random_happy_message"
+                
+                # If user-input is generic I love you or love, don't add to file
+                if [[ $user_input != "i love you" ]] && [[ $user_input != "love" ]]; then
+                    echo "$user_input" >> happy.txt 
+                fi
+            
+            else
+                say "I cannot express my love right now."
+                touch happy.txt
+                echo "i feel happy" > happy.txt
+
+            fi
+        
         else
             say "I am happy"
         fi
