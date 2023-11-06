@@ -97,5 +97,15 @@ The command `chmod +x` permits the file `BV-1` to be executed (`+x`) by macOS.
 
 You can read about the command [here](https://en.wikipedia.org/wiki/Chmod) if you wish.
 
+### Running Experimental Variants
+
+If you would like to follow along the development process explained in the Documentation, you can do so by downloading each experiment variant from this repository. Follow the same procedure of moving the variant into a folder and changing its permission to make it executable. Just that now, to run the variant each time, you would need to open the terminal in that folder and run the command:
+```
+./bv1.x.sh
+```
+substituting x with the appropriate variant number applies. 
+
+Although this isn't recommended as the documentation itself contains sufficient information about each variant version and its behvaiour, and the frequent terminal command accessing might be more of a hassle that it's worth.
+
 ### Acknowledgements
 - Icons sourced from: <a href="https://www.flaticon.com/free-icons/robot" title="robot icons">Robot icons created by Freepik - Flaticon</a>
