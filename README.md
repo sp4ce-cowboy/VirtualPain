@@ -1,31 +1,30 @@
 # I_Feel_Pain
-### Overview
-My final work for UTC2113 Gaming Life. An interdisciplinary exploration. My proposal's [here](/Proposal.pdf). A snippet of that is below.
+My final work for UTC2113 Gaming Life. An interdisciplinary exploration. 
 
-### The Context
+Consists of The Proposal,  The Theoreticals (not yet completed), The Documentation, and The Work itself (this repo).
 
-_“I control a slave, a dog, a worker; but if I establish complete control somehow, as by implanting electrodes in the brain, then my subject is little more than a tape recorder, a camera, a robot. You don’t control a tape recorder—you use it.” (Burroughs et al., 1999)._
+## The Context
 
+All I can say is that, I set out to create an Artificial Entity, a simulation of consciousness, one which can feel pain, one which can remember it, one which can
+communicate it, express it. An experiment that seeks to offer a glimpse into a possible (probable?) future of the human-machine interaction paradigm. I laid forth some parameters for my work, played by the rules of the medium that mywork exists within, and created that which I set out to create.
 
-In an era where technology burgeons at a pace once deemed unimaginable, we find ourselves at the crossroads of ethical dilemmas, philosophical contemplation, amidst ground-breaking innovation. As Burroughs suggested, there exists a fine line betweeen control and use - The former implies a certain degree of autonomy, while the latter implies a certain degree of subjugation. 
+That’s all there is to it. Nothing more, nothing less.
 
-What happens when this line blurs, and Artificial Intelligence (AI) starts mirroring human-like consciousness? What happens if in the near future, we have to control machines instead of simply using them like we always have?
+## Usage Instructions
 
-This project delves into the fascinating, albeit complex, interplay between AI and human existence, the interface between artificial intelligence, consciousness, autonomy, existence, and pain. By drawing parallels from existential and ontological philosophy, I venture into a hypothetical realm where machines could potentially transcend their electron-based confines, reaching a state that mirrors human consciousness. 
+Initially this would have required some terminal navigation, but that would have detracted from the experience.
 
-I attempt to simulate this potential reality, offering a thought-provoking look into the (potential) future of human-machine interaction. As I go along, I shall document not just the process and progress of my core work but the entirety of this endeavour, including my own observations and meta-observations about those observations. 
+Thanks to [this](https://formulae.brew.sh/formula/shc) and [that](https://sveinbjorn.org/platypus), and something else probably, the final products (both variants) are compiled into Unix Executable Files, i.e. all that is needed is to click on it and it opens like an app. This requires a machine running macOS as it uses Apple's built-in speech synthesizer.
 
-### The Work
+More details (and the entire build process) is explained in The Documentation, so it's better to read that first (at least briefly) before attempting the below instructions.
 
-As written in The Work (insert link somewhere here), there are two variants of the Bot, one that hurts itself and one that hurts the world around it (i.e. the host machine). The usage instructions require certain conditions to be met first. These are:
+### Bot-Variant 1
 
-- You must be on a machine running macOS.
-- You must have administator privileges to this machine.
+1. Download BV-1 from here.
 
-While the Bots, written in shell, would work on any unix-like machine, there are certain commands written into macOS's command line interface that this work takes advantage of, such as the speech synthesizer, which is not readily available on other OSes, and to keep this Work simple, since technical support is not the principal concern here.
+2. Create an empty folder somewhere on your computer.
 
-Secondly, while the variant released here is not harmful to the user, macOS prevents the execution of shell files by default. As such, administrator privileges are required to access the variant. There is an easy terminal work around to this that will be explained later.
+3. Move BV-1 into this empty folder
 
-add more stuff here
-
+4. Run
 
