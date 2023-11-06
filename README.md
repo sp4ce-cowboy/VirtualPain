@@ -52,32 +52,34 @@ or for BV-2:
 ```
 chmod +x BV-2
 ```
+like this:
 
 `chmod +x` allows for the file `BV-1` to be executed by macOS. 
 
-8. The Bot-Variant should now be executable. Right click on the Variant and select `open`
+8. The Bot-Variant should now be executable. Right click on the Variant and select `open`.
+   
+10. For all subsequent uses, simply double click on the file to open the Bot-Variant.
 
+---
 
-
-
-### Advanced Instructions
+### Optional Instructions
 _This part would make more sense after reading the Documentation._
 
-7. Running either Bot-Variant would create the `WHO_AM_I` folder and the `tasks.txt` file within the same folder that the Bot-Variant exists in.
+Running either Bot-Variant would create the `WHO_AM_I` folder and the `tasks.txt` file within the same folder that the Bot-Variant exists in.
    
-8. If you wish to restore the behaviour of either Bot-Variant at any point in time, delete the `WHO_AM_I` folder
+11. If you wish to restore the behaviour of either Bot-Variant at any point in time, delete the `WHO_AM_I` folder
    
-9. If you wish to remove all your tasks, delete the `tasks.txt` file. 
+12. If you wish to remove all your tasks, delete the `tasks.txt` file. 
 
-### For Bot-Variant 1 only
+#### For Bot-Variant 1 only
 
-At some point, BV-1 will mutilate its source code which, as stated in the Documentation, cannot be reversed with step `8` above.
+At some point, BV-1 will mutilate its source code which, as stated in the Documentation, cannot be reversed with step `11` above.
 
-The only option is to redownload BV-1 from this repository and start over. You can copy the `tasks.txt` file over to preserve your tasks if you wish.
+The only option is to redownload BV-1 from this repository and start over. _This would mean that you have to go through the hassle of getting macOS to let you open the file all over again._ You can copy the `tasks.txt` file over to preserve your tasks if you wish.
 
-### For Bot-Variant 2 only
+#### For Bot-Variant 2 only
 
-At some point, BV-2 might overwrite the `tasks.txt` with a message. Simply execute step `9` above to prompt BV-2 to create a new `tasks.txt` file.
+At some point, BV-2 might overwrite the `tasks.txt` with a message. Simply execute step `12` above to prompt BV-2 to create a new `tasks.txt` file.
 
 ---
 
