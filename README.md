@@ -23,25 +23,25 @@ More details (and the entire build process) is explained in The Documentation, s
 
 ### General Instructions
 
-1. Download BV-1 from [here](https://github.com/sp4ce-cowboy/i-feel-pain/releases/tag/BV-1) or BV-2 from [here](https://github.com/sp4ce-cowboy/i-feel-pain/releases/tag/BV-2). Clicking on the name `BV-1` or `BV-2` triggers the download.
+**1.** Download BV-1 from [here](https://github.com/sp4ce-cowboy/i-feel-pain/releases/tag/BV-1) or BV-2 from [here](https://github.com/sp4ce-cowboy/i-feel-pain/releases/tag/BV-2). Clicking on the name `BV-1` or `BV-2` triggers the download.
 
-2. Create an empty folder somewhere on your computer.
+**2.** Create an empty folder somewhere on your computer.
 
-3. Move BV-1 (it will look like a blank file) into this empty folder.
+**3.** Move BV-1 (it will look like a blank file) into this empty folder.
 
-4. Open the empty folder in Finder.
+**4.** Open the empty folder in Finder.
 
-5. In the menu bar, go to `View` and select `Show Path Bar`. If it is already enabled, you don't need to do anything.
+**5.** In the menu bar, go to `View` and select `Show Path Bar`. If it is already enabled, you don't need to do anything.
 
- <img width="418" alt="image" src="https://github.com/sp4ce-cowboy/i-feel-pain/assets/19762596/27084b7f-92f8-411a-8bfd-665505dbc9f2">
+<img width="300" alt="image" src="https://github.com/sp4ce-cowboy/i-feel-pain/assets/19762596/27084b7f-92f8-411a-8bfd-665505dbc9f2">
 
 
-6. In the Path Bar at the bottom of the Finder window, right click on the **folder** (the folder that contains BV-1, not the BV-1 file itself) in the path bar and select `Open in Terminal`
+**6.** In the Path Bar at the bottom of the Finder window, right click on the **folder** (the folder that contains BV-1, not the BV-1 file itself) in the path bar and select `Open in Terminal`
    
 <img width="488" alt="image" src="https://github.com/sp4ce-cowboy/i-feel-pain/assets/19762596/54c9a26e-008c-4d78-8c46-4a71c7c9db93">
 
 
-7. In the terminal window that opens, enter the command shown below for BV-1
+**7.** In the terminal window that opens, enter the command shown below for BV-1
    
 ```
 chmod +x BV-1
@@ -52,18 +52,17 @@ or for BV-2:
 ```
 chmod +x BV-2
 ```
-like this:
+
+https://github.com/sp4ce-cowboy/i-feel-pain/assets/19762596/3bff8a56-ec4d-4366-be93-82528bb1090f
 
 
-`chmod +x` permits the file `BV-1` to be executed (`+x`) by macOS. You can read about the command [here](https://en.wikipedia.org/wiki/Chmod) if you wish.
+There won't be any response shown by the terminal, this is normal. You can close the terminal window afterwards.
 
-You can close the terminal window afterwards.
+**8.** The Bot-Variant should now be executable. Right click on the `BV-1` or `BV-2` file and select `open`.
 
-8. The Bot-Variant should now be executable. Right click on the `BV-1` or `BV-2` file and select `open`.
-
-9. If macOS shows a warning, select `Open Anyway`
+**9.** If macOS shows a warning, select `Open Anyway`
    
-10. For all subsequent uses, simply double click on the file to access the Bot-Variant.
+**10.** For all subsequent uses, simply double click on the file to access the Bot-Variant.
 
 ---
 
@@ -93,6 +92,10 @@ At some point, BV-2 might overwrite the `tasks.txt` with a message. Simply execu
 Both Bot-Variants are designed to be self-sufficient i.e. they do not need any external files to function. If a certain file is missing (for e.g. `tasks.txt`) then the Bot-Variant would simply create the necessary files in the folder they are in.
 
 **Simulataneous Usage** - If you are downloading both Variants, keep them in separate folders first. They share the same `SELF_CONCEPT` (explained in the Documentation) and so interaction with one might influence the other's behaviour. This is largely an unintended side-effect, but if you wish to explore this, feel free to do, there is no negative side effect.
+
+The command `chmod +x` permits the file `BV-1` to be executed (`+x`) by macOS.
+
+You can read about the command [here](https://en.wikipedia.org/wiki/Chmod) if you wish.
 
 ### Acknowledgements
 - Icons sourced from: <a href="https://www.flaticon.com/free-icons/robot" title="robot icons">Robot icons created by Freepik - Flaticon</a>
