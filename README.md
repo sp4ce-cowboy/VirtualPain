@@ -54,7 +54,7 @@ chmod +x BV-2
 ```
 like this:
 
-`chmod +x` allows for the file `BV-1` to be executed by macOS. 
+`chmod +x` allows for the file `BV-1` to be executed by macOS. You can close the terminal window afterwards.
 
 8. The Bot-Variant should now be executable. Right click on the Variant and select `open`.
    
