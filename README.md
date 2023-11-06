@@ -1,6 +1,6 @@
 # _I FEEL PAIN_
 
-My final work for UTC2113 Gaming Life. An interdisciplinary exploration. 
+My work for UTC2113 Gaming Life. An interdisciplinary exploration. 
 
 Consists of The [Proposal](https://github.com/sp4ce-cowboy/i-feel-pain/blob/main/Written%20Articles/Proposal.pdf), The Theoreticals (not yet completed), The Documentation, and The Work itself (this GitHub repository).
 
