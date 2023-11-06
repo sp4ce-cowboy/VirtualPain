@@ -7,9 +7,9 @@ while true; do
 
     # Check if the input contains the word "hate"
     if [[ $user_input == *hate* ]]; then
-        say "I feel pain"
+        echo "I FEEL PAIN"
     else
-        say "I am happy"
+        echo "I FEEL OK"
     fi
 done
 

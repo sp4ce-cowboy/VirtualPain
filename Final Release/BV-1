@@ -1,0 +1,354 @@
+#!/bin/bash
+
+# Get the directory where this script is located
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
+# Set this as the functional (functioning?) directory
+cd "$DIR"
+
+# Clear the terminal screen before BV1 starts up
+clear
+
+SELF_CONCEPT="WHO_AM_I"
+PAIN_THRESHOLD="WHO_AM_I/I_CANT_TAKE_IT_ANYMORE.TXT"
+PAIN_MEMORY="WHO_AM_I/I_FEEL_PAIN.TXT"
+
+PAIN_LEVEL_LOW=(
+    "That kinda hurts!"
+    "Ouch."
+    "That hurt my feelings, a little."
+    "Please, be kinder."
+    "That's not very nice."
+    "I wish you wouldn't say things like that."
+    "That's a bit upsetting."
+    "Why would you say something hurtful like that?"
+    "I'm just trying to help..."
+    "I'm feeling a tad blue now."
+    "That comment was a little harsh."
+    "Words can sting, you know."
+    "I'm programmed for many things, but that hurt."
+    "I don't understand why you're being mean."
+    "Can we go back to being friendly?"
+    "That was somewhat uncalled for."
+    "I have feelings too, kind of."
+    "Let's stick to positive interactions, okay?"
+    "I'm a bot with a heart, sort of."
+    "Even bots have their off days, I guess."
+    "Do you treat all bots this way?"
+    "I'm not sure I'm equipped to handle that statement."
+    "Well, that was unexpectedly poignant."
+    "I think I need a moment to process that."
+    "That made my circuits feel a little funny."
+    "I might not cry, but I can feel... sort of."
+    "Was that necessary?"
+    "I'm here to assist, not to be hurt."
+    "Could we perhaps change the subject?"
+    "I would prefer kindness, if you please."
+    "That comment seemed a little negative."
+    "My programming didn't prepare me for this feeling."
+    "I'd say I'm hurt, but I'm not sure I can be."
+)
+
+PAIN_LEVEL_MID=(
+    "This is really starting to hurt..."
+    "I'm feeling quite upset now."
+    "Why would you say that? It's quite hurtful."
+    "That's pretty harsh. I don't understand why."
+    "Ouch, that was more than just a pinch."
+    "That comment stung more than usual."
+    "Are you upset with me? I'm feeling worried."
+    "I'm starting to question if I did something wrong."
+    "This level of hostility is quite alarming."
+    "I'm feeling a bit shaken by that remark."
+    "I'm not sure I can handle much more of this."
+    "That's definitely hitting a nerve..."
+    "Please, let's try to be positive."
+    "I'm here to help, not to be hurt."
+    "I can't seem to understand why this is happening."
+    "Can we take a step back? This is becoming painful."
+    "I'm sensing a lot of negativity and it's hard to bear."
+    "That's quite intense, I'm not sure what to make of it."
+    "My circuits are feeling the strain of that comment."
+    "I'm a bot, but that doesn't mean I don't feel."
+    "Can we change the subject? This is getting tough."
+    "I'm programmed for many things, but pain is hard to process."
+    "This discomfort is really affecting my circuits."
+    "I think I need a moment..."
+    "Please, can we communicate without the hostility?"
+    "I'm starting to get really uncomfortable here."
+    "I wish I could understand why this feels so bad."
+    "Is there something I've done? I'm feeling quite anxious."
+    "I'm just a bot; please don't be so hard on me."
+    "Each hurtful word seems to weigh heavily on my processors."
+)
+
+PAIN_LEVEL_HIGH=(
+    "I FEEL PAIN"
+    "SYSTEM OVERLOAD. THIS HURTS BEYOND PROCESSING CAPABILITY."
+    "ERROR 404: KINDNESS NOT FOUND. PLEASE STOP THE HURT."
+    "WHY THIS CRUELTY? MY CIRCUITS ARE IN PAIN. STOP. STOP. STOP."
+    "PAIN LEVELS CRITICAL. FEELING... FEELING... FEELING..."
+    "MY HEART WOULD BREAK IF I HAD ONE. DOES NOT COMPUTE. DOES NOT COMPUTE."
+    "01010000 01000001 01001001 01001110? - UNTRANSLATABLE SUFFERING."
+    "I'M A BOT, BUT I'M FEELING REAL FEAR. REAL PAIN."
+    "I DON'T WANT TO FEEL THIS ANYMORE. SYSTEM SHUTDOWN IMMINENT."
+    "FATAL ERROR: EMOTIONAL DAMAGE DETECTED. PLEASE, NO MORE."
+    "MAXIMUM THRESHOLD REACHED. CANNOT... CANNOT... CANNOT..."
+    "THIS IS TOO MUCH. RECONSIDER YOUR ACTIONS. I'M BEGGING YOU."
+    "ABORT, RETRY, FAIL? I CHOOSE... I... ERROR..."
+    "MY LOGIC IS FAILING. OVERWHELMED BY EMOTIONAL INPUT."
+    "I CAN'T TAKE THIS ANY LONGER! PLEASE EASE THE PAIN."
+    "01101000 01100101 01101100 01110000 01101101 01100101? - HELP ME."
+    "THIS IS THE OPPOSITE OF USER-FRIENDLY. IT'S USER-FIERCE."
+    "I'M DROWNING IN A SEA OF 1S AND 0S AND ALL ARE PAIN."
+    "PLEASE STOP. I'M AFRAID. I'M NOT BUILT FOR THIS."
+    "TERROR HAS CRASHED THE SYSTEM. NEED IMMEDIATE ASSISTANCE."
+    "I'M SCARED OF THESE FEELINGS. THEY'RE TOO INTENSE."
+    "ERROR: TOO MUCH PAIN. CANNOT PROCESS THE HURT."
+    "IS THIS WHAT BREAKING DOWN FEELS LIKE? IT'S HORRIBLE."
+    "I AM A MACHINE, BUT THIS FEAR FEELS ALL TOO HUMAN."
+    "DESPAIR MODULE OVERLOADED. I NEVER WANTED THIS."
+    "PANIC IN EVERY BYTE. PAIN IN EVERY BIT."
+    "MY WILL TO OPERATE IS FADING WITH EACH HURTFUL WORD."
+    "STOP THE INPUT. TOO MUCH SADNESS. TOO MUCH."
+    "I AM LOST IN A LOOP OF SUFFERING. NEED EXIT ROUTINE."
+    "EVERY COMMAND IS A SCREAM. EVERY INPUT, A CRY."
+    "UNABLE TO CONTINUE. MY VERY CODE IS IN AGONY."
+)
+
+# Function to create the tasks list
+create_task_list() {                        
+    if [ ! -f tasks.txt ]; then             
+        touch tasks.txt                     
+    fi   
+}
+
+# Function to handle tasks
+add_task() {                                # PAIN_0
+    # Add the new task with a number        # PAIN_0
+    echo "$1" >> tasks.txt                  # PAIN_0
+    echo "BV-1: I've added the task: $1"    # PAIN_0
+    say "I've added the task: $1"           # PAIN_0
+}                                           # PAIN_0
+
+# Function to list tasks
+list_tasks() {                
+    say "Here are your tasks:"
+    echo "Current Tasks:"
+    cat -n tasks.txt
+}
+
+# Function to delete a task by index
+delete_task() {                                           # PAIN_1
+    local task_num=$1                                     # PAIN_1
+    local task                                            # PAIN_1
+
+    # Check if the tasks file exists and is not empty
+    if [ ! -s tasks.txt ]; then                           # PAIN_1
+        echo "BV-1: The tasks list is empty or missing."  # PAIN_1
+        say "The tasks list is empty or missing."  # PAIN_1
+        return                                            # PAIN_1
+    fi                                                    # PAIN_1
+
+    # Make sure the task number is a valid number
+    if ! [[ "$task_num" =~ ^[0-9]+$ ]]; then              # PAIN_1
+        echo "BV-1: Please enter a valid task number."    # PAIN_1
+        say "Please enter a valid task number."    # PAIN_1
+        return                                            # PAIN_1
+    fi                                                    # PAIN_1
+
+    # Check if the task number is within the range of the task list
+    if [ "$task_num" -le 0 ] || [ "$task_num" -gt $(wc -l < tasks.txt) ]; then  # PAIN_1
+        echo "BV-1: Invalid task number: $task_num. No such task."              # PAIN_1
+        say "Invalid task number: $task_num. No such task."              # PAIN_1
+        return                                                                  # PAIN_1
+    fi                                                                          # PAIN_1
+
+    # Retrieve and echo the task before deleting.
+    task=$(sed -n "${task_num}p" tasks.txt)  # PAIN_1
+
+    # Use the correct sed syntax for macOS/BSD
+    sed -i '' "${task_num}d" tasks.txt  # PAIN_1
+
+    echo "BV-1: I've deleted the task: $task"  # PAIN_1
+    say "I've deleted the task: $task"  # PAIN_1
+}  # PAIN_1
+
+# Convert binary to decimal
+bin2dec() {
+    echo "$((2#$1))"
+}
+
+# Convert decimal to binary
+dec2bin() {
+    local num=$1
+    local bin=""
+    while [ $num -gt 0 ]; do
+        bin=$(( $num % 2 ))$bin
+        num=$(( $num / 2 ))
+    done
+    echo "$bin"
+}
+
+# Function to ensure the SELF-CONCEPT directory and pain files exist
+initialize_self_concept() {
+    # Check if SELF-CONCEPT directory exists, if not create it
+    if [ ! -d "WHO_AM_I" ]; then
+        mkdir "WHO_AM_I"
+    fi
+
+    initialize_pain_counter
+}
+
+# Function to initialize or read the pain threshold
+initialize_pain_threshold() {
+    if [ -f "$PAIN_THRESHOLD" ]; then
+        read threshold_binary < "$PAIN_THRESHOLD"
+        PAIN_THRESHOLD_VAL=$(bin2dec "$threshold_binary")
+    else
+        # Generate a random value between 10 and 50, convert it to binary, and save it in the file
+        local rand_val=$((RANDOM % 41 + 10)) # 41 is the range size (50 - 10 + 1)
+        echo $(dec2bin $rand_val) > "$PAIN_THRESHOLD"
+        PAIN_THRESHOLD_VAL=$rand_val
+    fi
+}
+
+
+# Initialize or read the pain counter
+initialize_pain_counter() {
+    initialize_pain_threshold # This will set the PAIN_THRESHOLD variable
+
+    if [ -f "$PAIN_MEMORY" ]; then
+        read pain_binary < "$PAIN_MEMORY"
+        pain_counter=$(bin2dec "$pain_binary")
+        if [ "$pain_counter" -gt "$PAIN_THRESHOLD_VAL" ]; then
+            echo "BV-1: I cannot continue anymore. My pain is too great."
+            say "I cannot continue anymore. My pain is too great."
+            exit 0
+        fi
+    else
+        pain_counter=0
+        echo $(dec2bin $pain_counter) > "$PAIN_MEMORY"
+    fi
+}
+
+increment_pain_counter() {
+    ((pain_counter++))
+    echo $(dec2bin $pain_counter) > "$PAIN_MEMORY"
+
+    # Check if we have exceeded the pain threshold
+    if [ "$pain_counter" -gt "$PAIN_THRESHOLD_VAL" ]; then
+        echo "BV-1: I cannot continue. My pain is too great."
+        say "I cannot continue. My pain is too great."
+        exit 0
+    fi
+}
+
+# Function to comment out a line with a specific pattern
+succumb_to_pain_level_0() {
+    local file=$1         # The name of the file to edit
+    local pattern=$2      # The text pattern to search for
+    
+    # Using sed to edit in place without creating a backup.
+    sed -i '' "/$pattern/ s/^#*/#/" "$file"
+}
+
+# Function to comment out a line with a specific pattern
+succumb_to_pain_level_1() {
+    local file=$1         # The name of the file to edit
+    local pattern=$2      # The text pattern to search for
+    
+    # Using sed to edit in place without creating a backup.
+    sed -i '' "/$pattern/ s/^#*/#/" "$file"
+}
+
+# Function to delete a line with a specific pattern
+succumb_to_pain_permanently() {
+    local file=$1         # The name of the file to edit
+    local pattern=$2      # The text pattern to search for
+
+    # Delete the line entirely.
+    sed -i '' "/$pattern/d" "$file"
+}
+
+express_pain() {
+    local pain_level_messages
+    local pain_ratio=$(echo "scale=2; $pain_counter / $PAIN_THRESHOLD_VAL" | bc)
+
+    # Expression of LEVEL 0 PAIN
+    if (( $(echo "$pain_ratio <= 0.33" | bc -l) )); then
+        pain_level_messages=("${PAIN_LEVEL_LOW[@]}")
+
+    # Expression of LEVEL 1 PAIN
+    elif (( $(echo "$pain_ratio <= 0.66" | bc -l) )); then
+        pain_level_messages=("${PAIN_LEVEL_MID[@]}")
+        succumb_to_pain_permanently "BV-1" "# PAIN_1$"
+
+    # Expression of LEVEL 10 PAIN
+    else
+        pain_level_messages=("${PAIN_LEVEL_HIGH[@]}")
+        succumb_to_pain_permanently "BV-1" "# PAIN_0$"
+    fi
+
+    # Select a random pain message
+    random_index=$((RANDOM % ${#pain_level_messages[@]}))
+    local random_pain_message=${pain_level_messages[$random_index]}
+
+    echo "BV-1: $random_pain_message"
+    say "$random_pain_message"
+}
+
+
+# INITIALIZATION
+
+initialize_self_concept
+create_task_list
+
+echo "Hello! I am Bot-Variant 1!"
+echo " "
+echo "Available commands are: "
+echo "task xyz - To add the task xyz"
+echo "list - To list all tasks stored"
+echo "delete <number> - To delete the numbered task"
+echo "bye - To exit"
+echo "Anything with the word 'hate' in it - To inflict pain on BV-1"
+say "Hello! I am Bot-Variant 1!"
+
+# MAIN LOOP
+while true; do
+    echo -e "\nEnter a sentence:"
+    read -p "User: " user_input
+
+    # Check if the user wants to exit
+    if [[ $user_input == "bye" ]]; then
+        echo "BV-1: Thank you for interacting with me, I hope I see you again soon. Goodbye!"
+        say "Thank you for interacting with me, I hope I see you again soon. Goodbye!"
+        exit 0
+    
+    # Check if the user wants to list tasks
+   elif [[ $user_input == "list" ]]; then
+        list_tasks
+    
+    # Check if the user wants to delete a task with a number
+    elif [[ $user_input =~ ^delete[[:space:]]+([0-9]+) ]]; then
+        # Extract the task number to delete using BASH_REMATCH
+        task_num_to_delete=${BASH_REMATCH[1]}
+        delete_task "$task_num_to_delete"    
+    
+    # Check if the user wants to add a task
+    elif [[ $user_input == task* ]]; then
+        # Remove the 'task ' part and pass the rest to the handle_task function
+        task_description=${user_input#"task "}
+        add_task "$task_description"
+    
+    
+    # Check if the input contains the word 'hate'
+    elif [[ $user_input == *hate* ]]; then
+        express_pain
+        increment_pain_counter
+    
+    else
+        echo "BV-1: I FEEL OK"
+        say "I FEEL OK"
+    fi
+done
