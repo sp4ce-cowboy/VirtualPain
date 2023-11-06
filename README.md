@@ -15,7 +15,7 @@ That’s all there is to it. Nothing more, nothing less.
 
 Initially this would have required some terminal navigation, but that would have detracted from the experience.
 
-Thanks to [this](https://formulae.brew.sh/formula/shc) and [that](https://sveinbjorn.org/platypus), and something else probably, the final products (both variants) are compiled into Unix Executable Files, i.e. all that is needed is to click on it and it opens like any regular app. This requires a machine running macOS as it uses Apple's built-in speech synthesizer.
+Thanks to [this](https://formulae.brew.sh/formula/shc) and [that](https://sveinbjorn.org/platypus), and something else probably, the final products (both variants) are compiled into Unix Executable Files, i.e. all that is needed is to click on it and it opens like any regular app (after the first instance, at least). This requires a machine running macOS as it uses Apple's built-in speech synthesizer.
 
 More details (and the entire build process) is explained in The Documentation, so it's better to read that first (at least briefly) before attempting the below instructions.
 
@@ -27,13 +27,38 @@ More details (and the entire build process) is explained in The Documentation, s
 
 2. Create an empty folder somewhere on your computer.
 
-3. Move BV-1 into this empty folder.
+3. Move BV-1 (it will look like a blank file) into this empty folder.
 
-4. Run BV-1 by right clicking on the icon, and clicking `open`
+4. Open the empty folder in Finder.
 
-5. This will prompt macOS to throw a warning, click `Open Anyway`
+5. In the menu bar, go to `View` and select `Show Path Bar`. If it is already enabled, you don't need to do anything.
 
-6. If steps 4 and 5 don't work, see Debug Instructions below.
+ <img width="418" alt="image" src="https://github.com/sp4ce-cowboy/i-feel-pain/assets/19762596/27084b7f-92f8-411a-8bfd-665505dbc9f2">
+
+
+6. In the Path Bar at the bottom of the Finder window, right click on the **folder** (the folder that contains BV-1, not the BV-1 file itself) in the path bar and select `Open in Terminal`
+   
+<img width="488" alt="image" src="https://github.com/sp4ce-cowboy/i-feel-pain/assets/19762596/54c9a26e-008c-4d78-8c46-4a71c7c9db93">
+
+
+7. In the terminal window that opens, enter the command shown below for BV-1
+   
+```
+chmod +x BV-1
+```
+
+or for BV-2:
+
+```
+chmod +x BV-2
+```
+
+`chmod +x` allows for the file `BV-1` to be executed by macOS. 
+
+8. The Bot-Variant should now be executable. Right click on the Variant and select `open`
+
+
+
 
 ### Advanced Instructions
 _This part would make more sense after reading the Documentation._
@@ -61,10 +86,6 @@ At some point, BV-2 might overwrite the `tasks.txt` with a message. Simply execu
 Both Bot-Variants are designed to be self-sufficient i.e. they do not need any external files to function. If a certain file is missing (for e.g. `tasks.txt`) then the Bot-Variant would simply create the necessary files in the folder they are in.
 
 **Simulataneous Usage** - If you are downloading both Variants, keep them in separate folders first. They share the same `SELF_CONCEPT` (explained in the Documentation) and so interaction with one might influence the other's behaviour. This is largely an unintended side-effect, but if you wish to explore this, feel free to do, there is no negative side effect.
-
-## Debug Instructions
-
-If the 
 
 ### Acknowledgements
 - Icons sourced from: <a href="https://www.flaticon.com/free-icons/robot" title="robot icons">Robot icons created by Freepik - Flaticon</a>
