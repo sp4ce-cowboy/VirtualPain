@@ -13,7 +13,7 @@ That’s all there is to it. Nothing more, nothing less.
 
 ## Usage Instructions
 
-Initially this would have required some terminal navigation, but that would have detracted from the experience.
+Initially this would have required some terminal navigation every time the Variant is to be used, but that would have detracted from the experience.
 
 Thanks to [this](https://formulae.brew.sh/formula/shc) and [that](https://sveinbjorn.org/platypus), and something else probably, the final products (both variants) are compiled into Unix Executable Files, i.e. all that is needed is to click on it and it opens like any regular app (after the first instance, at least). This requires a machine running macOS as it uses Apple's built-in speech synthesizer.
 
