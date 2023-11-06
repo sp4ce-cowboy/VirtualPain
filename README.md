@@ -23,7 +23,7 @@ More details (and the entire build process) is explained in The Documentation, s
 
 ### General Instructions
 
-1. Download BV-1 from here or BV-2 from here.
+1. Download BV-1 from [here](https://github.com/sp4ce-cowboy/i-feel-pain/releases/tag/BV-1) or BV-2 from [here](https://github.com/sp4ce-cowboy/i-feel-pain/releases/tag/BV-2).
 
 2. Create an empty folder somewhere on your computer.
 
