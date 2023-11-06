@@ -1,7 +1,7 @@
-# I_Feel_Pain
+# Artifical Consciousness
 My final work for UTC2113 Gaming Life. An interdisciplinary exploration. 
 
-Consists of The Proposal,  The Theoreticals (not yet completed), The Documentation, and The Work itself (this repo).
+Consists of The Proposal, The Theoreticals (not yet completed), The Documentation, and The Work itself (this repo).
 
 ## The Context
 
@@ -26,7 +26,13 @@ More details (and the entire build process) is explained in The Documentation, s
 
 3. Move BV-1 into this empty folder
 
-4. Run
+4. Run BV-1 by right clicking on the icon, and clicking `open`
+
+5. This will prompt macOS to throw a warning, click `Open Anyway`
+
+6. If steps 4 and 5 don't work, see below.
+
+## Debug Instructions
 
 ### Acknowledgements
-- Icons sourced from here
+- Icons sourced from: <a href="https://www.flaticon.com/free-icons/robot" title="robot icons">Robot icons created by Freepik - Flaticon</a>
