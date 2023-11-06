@@ -7,7 +7,7 @@ Consists of The [Proposal](https://github.com/sp4ce-cowboy/i-feel-pain/blob/main
 ## The Context
 
 All I can say is that, I set out to create an Artificial Entity, a simulation of consciousness, one which can feel pain, one which can remember it, one which can
-communicate it, express it. An experiment that seeks to offer a glimpse into a possible (probable?) future of the human-machine interaction paradigm. I laid forth some parameters for my work, played by the rules of the medium that mywork exists within, and created that which I set out to create.
+communicate it, express it. An experiment that seeks to offer a glimpse into a possible (probable?) future of the human-machine interaction paradigm. I laid forth some parameters for my work, played by the rules of the medium that my work exists in, and created that which I set out to create.
 
 That’s all there is to it. Nothing more, nothing less.
 
