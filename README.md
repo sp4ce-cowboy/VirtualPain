@@ -1,4 +1,4 @@
-# Artifical Consciousness
+# I FEEL PAIN
 My final work for UTC2113 Gaming Life. An interdisciplinary exploration. 
 
 Consists of The Proposal, The Theoreticals (not yet completed), The Documentation, and The Work itself (this repo).
