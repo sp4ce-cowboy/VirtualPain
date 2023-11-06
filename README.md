@@ -28,3 +28,5 @@ More details (and the entire build process) is explained in The Documentation, s
 
 4. Run
 
+### Acknowledgements
+- Icons sourced from here
