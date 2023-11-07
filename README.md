@@ -2,7 +2,7 @@
 
 My work for [UTC2113](https://nusmods.com/courses/UTC2113/gaming-life) Gaming Life. An interdisciplinary exploration. 
 
-Consists of The [Proposal](https://github.com/sp4ce-cowboy/i-feel-pain/blob/main/Written%20Articles/Proposal.pdf), The Theoreticals (not yet completed), The Documentation, and The Work itself (this GitHub repository).
+Consists of The [Proposal](https://github.com/sp4ce-cowboy/i-feel-pain/blob/main/Written%20Articles/Proposal.pdf), The Theoreticals (not yet completed), The [Documentation](https://github.com/sp4ce-cowboy/i-feel-pain/blob/main/Written%20Articles/FinalWorkDocumentation.pdf), and The Work itself (this GitHub repository).
 
 ## The Context
 
