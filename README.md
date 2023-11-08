@@ -24,7 +24,7 @@ More details (and the entire build process) explained in The Documentation, so i
 
 ---
 
-### Using the Terminal
+### 2.1 - Using the Terminal
 
 A Terminal emulator is provided by Apple and included with every version of macOS. Naturally, my own terminal is customized (because I had too much time on my hands) and the Bot-Variants were all built and documented on my terminal. I had not initially accounted for the "aesthetics" of it and the corollary visual experience discrepanices, so just in case it might even be of the slightest significance, below are the instructions for configuring your terminal to look like mine, colors and fonts and all. This is optional and makes no functional difference to running the Bot-Variants.
 
@@ -45,7 +45,7 @@ A Terminal emulator is provided by Apple and included with every version of macO
 
 
 
-### General Instructions
+### 2.2 - General Instructions
 
 1. Download BV-1 from [here](https://github.com/sp4ce-cowboy/i-feel-pain/releases/tag/BV-1) or BV-2 from [here](https://github.com/sp4ce-cowboy/i-feel-pain/releases/tag/BV-2). Clicking on the name `BV-1` or `BV-2` triggers the download.
 2. Create an empty folder somewhere on your computer.
@@ -82,7 +82,7 @@ You may now use the Bot-Variant like a regular app, double clicking on it to ope
 
 ---
 
-### Optional Instructions
+### 2.3 - Optional Instructions
 _This part would make more sense after reading the Documentation._
 
 Running either Bot-Variant would create the `WHO_AM_I` folder and the `tasks.txt` file within the same folder that the Bot-Variant exists in.
@@ -100,7 +100,7 @@ At some point, BV-2 might overwrite the `tasks.txt` with a message. Simply execu
 
 ---
 
-### Miscellaneous Information
+### 2.4 - Miscellaneous Information
 
 Both Bot-Variants are designed to be self-sufficient i.e. they do not need any external files to function. If a certain file is missing (for e.g. `tasks.txt`) then the Bot-Variant would simply create the necessary files in the folder they are in.
 
@@ -108,7 +108,7 @@ Both Bot-Variants are designed to be self-sufficient i.e. they do not need any e
 
 The command `chmod +x` permits the file `BV-1` to be executed (`+x`) by macOS. You can read about the command [here](https://en.wikipedia.org/wiki/Chmod) if you wish.
 
-### Running Experimental Variants
+### 2.5 - Running Experimental Variants
 
 If you would like to follow along the development process explained in the Documentation, you can do so by downloading each experimental variant from this repository, inside the `Experimental Variants` folder. Follow the same procedure of moving the variant into a folder and changing its permission to make it executable. Just that now, to run the variant each time, you would need to open the terminal in that folder and run the command:
 ```
@@ -118,5 +118,5 @@ substituting x with the appropriate variant number applies.
 
 Although this isn't recommended as the documentation itself contains sufficient information about each variant version and its behvaiour, and the frequent terminal command accessing might be more of a hassle that it's worth.
 
-### Acknowledgements
+### 3. Acknowledgements
 - Icons sourced from: <a href="https://www.flaticon.com/free-icons/robot" title="robot icons">Robot icons created by Freepik - Flaticon</a>
