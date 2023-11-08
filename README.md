@@ -28,8 +28,11 @@ More details (and the entire build process) explained in The Documentation, so i
 
 A Terminal emulator is provided by Apple and included with every version of macOS. Naturally, my own terminal is customized (because I had too much time on my hands) and the Bot-Variants were all built and documented on my terminal. I had not initially accounted for the "aesthetics" of it and the corollary visual experience discrepanices, so just in case it might even be of the slightest significance, below are the instructions for configuring your terminal to look like mine, colors and fonts and all. This is optional and makes no functional difference to running the Bot-Variants.
 
-1. Download the custom terminal theme from here.
-2. Double-click to open this file, which would prompt a [Terminal](https://support.apple.com/en-sg/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac) window to open.
+1. Download the custom terminal theme from [here](CustomHomebrew.terminal).
+   
+<img width="300" alt="image" src="https://github.com/sp4ce-cowboy/i-feel-pain/assets/19762596/7e3f22eb-343c-4c50-8d67-b5d45ea784a9">
+
+2. Once downloaded, double-click to open this file, which would prompt a [Terminal](https://support.apple.com/en-sg/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac) window to open.
 3. Open up Terminal Preferences from the menu bar (Terminal > Preferences or Terminal > Settings), this window should pop up.
 
 <img width="500" alt="image" src="https://github.com/sp4ce-cowboy/i-feel-pain/assets/19762596/ce8f8a93-3cf0-4e31-ba41-85ecde6094e8">
