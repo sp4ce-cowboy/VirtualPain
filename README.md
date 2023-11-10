@@ -35,9 +35,9 @@ A Terminal emulator is provided by Apple and included with every version of macO
 2. Once downloaded, double-click to open this file, which would prompt a [Terminal](https://support.apple.com/en-sg/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac) window to open.
 3. Open up Terminal Preferences from the menu bar (Terminal > Preferences or Terminal > Settings), this window should pop up.
 
-<img width="500" alt="image" src="https://github.com/sp4ce-cowboy/i-feel-pain/assets/19762596/ce8f8a93-3cf0-4e31-ba41-85ecde6094e8">
+<img width="300" alt="image" src="https://github.com/sp4ce-cowboy/i-feel-pain/assets/19762596/ce8f8a93-3cf0-4e31-ba41-85ecde6094e8">
 
-<img width="500" alt="image" src="https://github.com/sp4ce-cowboy/i-feel-pain/assets/19762596/857eec5f-59fe-40cf-8c38-581368e7a962">
+<img width="300" alt="image" src="https://github.com/sp4ce-cowboy/i-feel-pain/assets/19762596/857eec5f-59fe-40cf-8c38-581368e7a962">
 
 
 4. Click on the `CustomHomebrew` theme, once it is highlighted in blue, click the default button at the bottom of the window.
