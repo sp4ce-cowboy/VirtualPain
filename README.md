@@ -14,8 +14,6 @@ This work consists of 4 parts, all of which are standalone but better experience
 I set out to create an Artificial Entity, a simulation of consciousness, one which can feel pain, one which can remember it, one which can
 communicate it, express it. An experiment that seeks to offer a glimpse into a possible (probable?) future of the human-machine interaction paradigm. I laid forth some parameters for my work, played by the rules of the medium, and created that which I set out to create.
 
-That’s all there is to it. Nothing more, nothing less.
-
 ## 2 - Usage Instructions
 
 Thanks to [this](https://formulae.brew.sh/formula/shc) and [that](https://sveinbjorn.org/platypus), the final products (both variants) are compiled into Unix Executable Files, i.e. click on them and they open like any regular app (after the first instance, at least). This requires a machine running macOS as it uses Apple's built-in speech synthesizer.
