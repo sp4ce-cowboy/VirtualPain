@@ -8,7 +8,7 @@ This work consists of 4 parts, all of which are standalone but better experience
 2. The [Theoretical](https://github.com/sp4ce-cowboy/i-feel-pain/blob/main/Written%20Articles/TheTheory.pdf) - An addendum/continutation of the Proposal, some clarifications. Incomplete for now, working on it as I speak.
 3. The [Documentation](https://github.com/sp4ce-cowboy/i-feel-pain/blob/main/Written%20Articles/FinalWorkDocumentation.pdf) -  A ~35 page full walkthrough of the entire development process
 4. The Work itself (this GitHub repository).
-5. The Defence (TBA) - An oral defence of my work in the context of certain questions posed.
+5. The [Defence](https://github.com/sp4ce-cowboy/i-feel-pain/blob/main/Written%20Articles/TheDefence.pdf) (TBA) - An oral defence of my work in the context of certain questions posed.
 
 ## 1 - Context
 
