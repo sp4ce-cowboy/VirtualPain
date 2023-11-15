@@ -41,7 +41,7 @@ A Terminal emulator is provided by Apple and included with every version of macO
 4. Click on the `CustomHomebrew` theme, once it is highlighted in blue, click the default button at the bottom of the window.
 5. Your Terminal is now configured to open this theme by default, and you may quit the Terminal app at this point, and follow the General Instructions below.
 
-
+---
 
 ### 2.2 - General Instructions
 
