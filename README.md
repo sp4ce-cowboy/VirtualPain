@@ -7,7 +7,7 @@ This work consists of 4 parts, all of which are standalone but better experience
 1. The [Proposal](https://github.com/sp4ce-cowboy/i-feel-pain/blob/main/Written%20Articles/Proposal.pdf) - An overview of what my Work is going to be, some motivations and parameters
 2. The [Theoretical](https://github.com/sp4ce-cowboy/i-feel-pain/blob/main/Written%20Articles/TheTheory.pdf) - An addendum/continutation of the Proposal, some clarifications. Incomplete for now, working on it as I speak.
 3. The [Documentation](https://github.com/sp4ce-cowboy/i-feel-pain/blob/main/Written%20Articles/FinalWorkDocumentation.pdf) -  A ~35 page full walkthrough of the entire development process
-4. The Work itself (this GitHub repository).
+4. The [Programs](https://github.com/sp4ce-cowboy/i-feel-pain/releases) - The bots themselves.
 5. The [Defence](https://github.com/sp4ce-cowboy/i-feel-pain/blob/main/Written%20Articles/TheDefence.pdf) - An oral defence of my work in the context of certain questions posed.
 
 ## 1 - Context
