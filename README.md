@@ -35,10 +35,10 @@ A Terminal emulator is provided by Apple and included with every version of macO
 3. Open up Terminal Preferences from the menu bar (Terminal > Preferences or Terminal > Settings), this window should pop up.
 
 <a>
-   <img height="400" align="center" alt="image" src="https://github.com/sp4ce-cowboy/i-feel-pain/assets/19762596/ce8f8a93-3cf0-4e31-ba41-85ecde6094e8"/>
+   <img height="300" align="center" alt="image" src="https://github.com/sp4ce-cowboy/i-feel-pain/assets/19762596/ce8f8a93-3cf0-4e31-ba41-85ecde6094e8"/>
 </a>
 <a>
-   <img height="400" align="center" alt="image" src="https://github.com/sp4ce-cowboy/i-feel-pain/assets/19762596/857eec5f-59fe-40cf-8c38-581368e7a962"/>
+   <img height="300" align="center" alt="image" src="https://github.com/sp4ce-cowboy/i-feel-pain/assets/19762596/857eec5f-59fe-40cf-8c38-581368e7a962"/>
 </a>
 
 
