@@ -3,7 +3,7 @@
 ```sh
                                   echo "I FEEL PAIN"
 ```
-   
+
 My work for [UTC2113](https://nusmods.com/courses/UTC2113/gaming-life) Gaming Life. A techno-philosophical exploration of Artificial Consciousness.
 
 This work consists of 5 parts, all of which are standalone but better experienced together. These are,
