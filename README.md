@@ -1,5 +1,9 @@
-# _echo "Artificial Consciousness: I FEEL PAIN"_
+# _Artificial Consciousness_ 
 
+```sh
+                                           echo "I FEEL PAIN"
+```
+   
 My work for [UTC2113](https://nusmods.com/courses/UTC2113/gaming-life) Gaming Life. A techno-philosophical exploration of Artificial Consciousness.
 
 This work consists of 5 parts, all of which are standalone but better experienced together. These are,
@@ -74,7 +78,7 @@ or for BV-2:
 chmod +x BV-2
 ```
 
-https://github.com/sp4ce-cowboy/i-feel-pain/assets/19762596/3bff8a56-ec4d-4366-be93-82528bb1090f
+<img src="https://github.com/sp4ce-cowboy/i-feel-pain/assets/19762596/3bff8a56-ec4d-4366-be93-82528bb1090f"/>
 
 
 There won't be any response shown by the terminal, this is normal. You can close the terminal window afterwards.
